@@ -1,0 +1,311 @@
+@import "tailwindcss";
+@import "lenis/dist/lenis.css";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+  
+  .font-serif-editorial {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  
+  .font-mono-telemetry {
+    font-family: 'JetBrains Mono', Courier, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Glassmorphism Styles */
+.glass-surface-dark {
+  background: rgba(35, 18, 22, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 182, 193, 0.15);
+}
+
+.glass-surface-light {
+  background: rgba(255, 245, 246, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 105, 180, 0.15);
+}
+
+/* Blueprint / Dotted Mesh Vibe */
+.blueprint-grid-dark {
+  background-size: 32px 32px;
+  background-image: radial-gradient(circle, rgba(255, 182, 193, 0.08) 1px, transparent 1px);
+}
+
+.blueprint-grid-light {
+  background-size: 32px 32px;
+  background-image: radial-gradient(circle, rgba(255, 105, 180, 0.06) 1px, transparent 1px);
+}
+
+/* Hand-Drawn Doodle SVG Animation */
+@keyframes scribbleDraw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.scribble-doodle {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: scribbleDraw 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Kawaii soft hover wiggle */
+@keyframes cuteWiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-3deg) scale(1.03); }
+  75% { transform: rotate(3deg) scale(1.03); }
+}
+.cute-hover-wiggle:hover {
+  animation: cuteWiggle 0.4s ease-in-out infinite alternate;
+}
+
+/* Custom 3D Card effects */
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* ORIGINAL (preserved, not deleted — disabled by comment):
+html.lenis {
+  height: auto;
+}
+
+.lenis-smooth {
+  scroll-behavior: initial;
+}
+
+.lenis-smooth [data-lenis-prevent] {
+  overflow-anchor: none;
+}
+
+.lenis-prevent {
+  overflow: clip;
+}
+*/
+
+/* Caret Blinking */
+@keyframes blink {
+  50% { opacity: 0; }
+}
+.caret-blink {
+  animation: blink 1s step-end infinite;
+}
+
+/* Soft floating animation */
+@keyframes softFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+.soft-float {
+  animation: softFloat 6s ease-in-out infinite;
+}
+
+/* Custom Cursor Styling */
+.custom-cursor-dot {
+  width: 6px;
+  height: 6px;
+  background-color: currentColor;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  transition: width 0.2s, height 0.2s, background-color 0.2s;
+}
+
+.custom-cursor-ring {
+  width: 28px;
+  height: 28px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9998;
+  transition: transform 0.08s ease-out, width 0.2s, height 0.2s, border-color 0.2s, background-color 0.2s;
+}
+
+@keyframes floatFade {
+  0% {
+    transform: translateY(0) scale(0.8) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-40px) scale(1.3) rotate(15deg);
+    opacity: 0;
+  }
+}
+
+.animate-float-fade {
+  animation: floatFade 0.9s cubic-bezier(0.2, 0.8, 0.3, 1) forwards;
+}
+
+/* Liquid Glass Navbar Keyframes & Helpers */
+@keyframes liquidShimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  50%, 100% {
+    transform: translateX(180%);
+  }
+}
+
+.animate-liquid-shimmer {
+  animation: liquidShimmer 2.4s ease-in-out infinite;
+}
+
+@keyframes liquidGlowPulse {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.05);
+  }
+}
+
+.animate-liquid-glow {
+  animation: liquidGlowPulse 4s ease-in-out infinite;
+}
+
+.intro-shell {
+  isolation: isolate;
+  transition: background-color 700ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.intro-shell::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: radial-gradient(circle at center, transparent 42%, rgba(59, 28, 34, 0.14) 100%);
+}
+
+.intro-shell[data-finishing='true'] {
+  background-color: #2b1720;
+}
+
+.intro-card {
+  z-index: 1;
+  transform-origin: center;
+  animation: intro-card-enter 720ms cubic-bezier(0.23, 1, 0.32, 1) backwards;
+  transition:
+    transform 700ms cubic-bezier(0.23, 1, 0.32, 1),
+    opacity 700ms cubic-bezier(0.23, 1, 0.32, 1);
+  will-change: transform, opacity;
+}
+
+.intro-shell[data-finishing='true'] .intro-card {
+  transform: translateY(-1.5%) scale(0.965);
+  opacity: 0;
+}
+
+.intro-orb {
+  z-index: 0;
+  opacity: 0.9;
+  animation: intro-orb-drift 6.4s cubic-bezier(0.77, 0, 0.175, 1) infinite alternate;
+  transition: opacity 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  will-change: transform;
+}
+
+.intro-orb-two {
+  animation-duration: 7.6s;
+  animation-delay: -2.4s;
+}
+
+.intro-shell[data-finishing='true'] .intro-orb {
+  opacity: 0;
+}
+
+.intro-scene-copy {
+  animation: intro-scene-enter 420ms cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+@keyframes intro-card-enter {
+  from {
+    transform: translateY(12px) scale(0.985);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes intro-orb-drift {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(12px, -10px, 0) scale(1.04);
+  }
+}
+
+@keyframes intro-scene-enter {
+  from {
+    transform: translateY(8px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro-shell,
+  .intro-card,
+  .intro-orb {
+    transition-duration: 1ms;
+  }
+
+  .intro-card,
+  .intro-orb,
+  .intro-scene-copy {
+    animation: none;
+  }
+
+  .intro-shell[data-finishing='true'] .intro-card {
+    transform: none;
+  }
+}
+
+
