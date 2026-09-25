@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">Sru Codes portfolio</title>
+  <desc id="desc">A dark pink editorial banner for Sru Codes, an interactive software, AI, and web portfolio.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#251219"/>
+      <stop offset="0.58" stop-color="#3B1C28"/>
+      <stop offset="1" stop-color="#5A2440"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#FF6FAE" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#FF6FAE" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#FFD4DF" stroke-opacity="0.08" stroke-width="1"/>
+      <circle cx="1" cy="1" r="1.2" fill="#FFD4DF" fill-opacity="0.16"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#160A10" flood-opacity="0.42"/>
+    </filter>
+    <clipPath id="frame">
+      <rect width="1200" height="420" rx="28"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="420" fill="url(#bg)"/>
+    <rect width="1200" height="420" fill="url(#grid)"/>
+    <circle cx="1010" cy="108" r="260" fill="url(#glow)"/>
+    <circle cx="1080" cy="360" r="170" fill="#FF8FB8" fill-opacity="0.08"/>
+    <path d="M0 350C180 300 290 420 470 360S780 290 1200 380V420H0Z" fill="#FF7EB0" fill-opacity="0.07"/>
+    <g transform="translate(70 52)">
+      <rect width="54" height="54" rx="17" fill="#EC4899"/>
+      <circle cx="42" cy="12" r="5" fill="#FFE3EC"/>
+      <text x="27" y="39" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="34" font-weight="800" text-anchor="middle">S</text>
+    </g>
+    <text x="144" y="75" fill="#FFD4DF" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700" letter-spacing="3">SRU CODES / PORTFOLIO SYSTEM</text>
+    <text x="70" y="170" fill="#FFF7F8" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="58" font-weight="800" letter-spacing="-2">BUILDING WITH</text>
+    <text x="70" y="232" fill="#FF8FB8" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="58" font-weight="800" letter-spacing="-2">CURIOSITY.</text>
+    <text x="72" y="278" fill="#E9CDD5" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18">Software systems, AI experiments, and expressive web experiences.</text>
+    <g transform="translate(70 316)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="700" letter-spacing="1">
+      <g><rect width="112" height="34" rx="17" fill="#FFD4DF" fill-opacity="0.1" stroke="#FF8FB8" stroke-opacity="0.45"/><text x="56" y="22" fill="#FFEAF0" text-anchor="middle">REACT 19</text></g>
+      <g transform="translate(124)"><rect width="132" height="34" rx="17" fill="#FFD4DF" fill-opacity="0.1" stroke="#FF8FB8" stroke-opacity="0.45"/><text x="66" y="22" fill="#FFEAF0" text-anchor="middle">TYPESCRIPT</text></g>
+      <g transform="translate(268)"><rect width="100" height="34" rx="17" fill="#FFD4DF" fill-opacity="0.1" stroke="#FF8FB8" stroke-opacity="0.45"/><text x="50" y="22" fill="#FFEAF0" text-anchor="middle">AI / ML</text></g>
+      <g transform="translate(380)"><rect width="112" height="34" rx="17" fill="#FFD4DF" fill-opacity="0.1" stroke="#FF8FB8" stroke-opacity="0.45"/><text x="56" y="22" fill="#FFEAF0" text-anchor="middle">WEBGPU</text></g>
+    </g>
+    <g transform="translate(805 56)" filter="url(#shadow)">
+      <rect width="335" height="302" rx="24" fill="#1C0D13" fill-opacity="0.88" stroke="#FFB6C9" stroke-opacity="0.32"/>
+      <circle cx="28" cy="28" r="6" fill="#FF6FAE"/>
+      <circle cx="49" cy="28" r="6" fill="#FFD166"/>
+      <circle cx="70" cy="28" r="6" fill="#8BE9C1"/>
+      <text x="102" y="33" fill="#9F7886" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="2">PORTFOLIO.EXE</text>
+      <text x="28" y="83" fill="#FF8FB8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">const craft = {</text>
+      <text x="48" y="113" fill="#E8CDD6" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">mindset: 'learn by doing',</text>
+      <text x="48" y="141" fill="#E8CDD6" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">stack: ['React', 'AI', 'Web'],</text>
+      <text x="48" y="169" fill="#E8CDD6" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">motion: 'purposeful',</text>
+      <text x="28" y="197" fill="#FF8FB8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">};</text>
+      <text x="28" y="237" fill="#9F7886" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="1.5">INTRO SEQUENCE</text>
+      <rect x="28" y="254" width="279" height="8" rx="4" fill="#4A2A36"/>
+      <rect x="28" y="254" width="279" height="8" rx="4" fill="#FF6FAE"/>
+      <circle cx="307" cy="258" r="8" fill="#FFF7F8"/>
+      <text x="28" y="286" fill="#FFD4DF" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">READY_</text>
+      <rect x="110" y="275" width="11" height="16" fill="#FF8FB8"/>
+    </g>
+    <g fill="none" stroke="#FFB6C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.72">
+      <path d="M760 76l5 11 12 5-12 5-5 12-5-12-12-5 12-5z"/>
+      <path d="M1160 122c18 8 25 20 18 35-7 14-21 20-39 15 3-17 9-34 21-50z"/>
+      <path d="M1150 163c7 5 11 10 13 17"/>
+    </g>
+  </g>
+</svg>
