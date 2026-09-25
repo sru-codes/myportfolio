@@ -2,11 +2,19 @@ import { useState } from 'react';
 import InfiniteSpiral, { type InfiniteSpiralItem } from './InfiniteSpiral';
 import { BowDoodle, SparkleDoodle, HeartDoodle, WashiTape } from './Doodles';
 import { Sparkles, MoveVertical, MousePointer, Compass, RotateCw } from 'lucide-react';
+import orcaImage from '../assets/images/orca_marine_ai_1790246033300.jpg';
+import galaxyImage from '../assets/images/galaxy_constellation_1790246051954.jpg';
+import deskImage from '../assets/images/cute_coding_desk_1790246066149.jpg';
+import avatarImage from '../assets/images/srustisri_chibi_avatar_1790242888033.jpg';
+import mascotImage from '../assets/images/cute_cyber_mascot_1790246079615.jpg';
+import neuralImage from '../assets/images/neural_artwork_1790238748488.jpg';
+import backdropImage from '../assets/images/story_backdrop_1790238763038.jpg';
+import profileImage from '../assets/images/sru_avatar_1790238734576.jpg';
 
 const spiralItems: InfiniteSpiralItem[] = [
   {
     id: 'orca',
-    src: '/src/assets/images/orca_marine_ai_1790246033300.jpg',
+    src: orcaImage,
     alt: 'ORCA Marine Intelligence SIH 2026',
     label: 'ORCA AI (SIH 2026) 🌊',
     href: 'https://github.com/sru-codes/ORCA-Marine-Intelligence',
@@ -14,7 +22,7 @@ const spiralItems: InfiniteSpiralItem[] = [
   },
   {
     id: 'galaxy',
-    src: '/src/assets/images/galaxy_constellation_1790246051954.jpg',
+    src: galaxyImage,
     alt: 'Galaxy Telemetry & Constellation Generator',
     label: 'Galaxy Constellations 🌌',
     href: 'https://github.com/sru-codes/sru-codes',
@@ -22,7 +30,7 @@ const spiralItems: InfiniteSpiralItem[] = [
   },
   {
     id: 'desk',
-    src: '/src/assets/images/cute_coding_desk_1790246066149.jpg',
+    src: deskImage,
     alt: 'Cute Developer Workspace',
     label: 'Pastel Dev Lab 🌸',
     href: 'https://github.com/sru-codes',
@@ -30,7 +38,7 @@ const spiralItems: InfiniteSpiralItem[] = [
   },
   {
     id: 'chibi',
-    src: '/src/assets/images/srustisri_chibi_avatar_1790242888033.jpg',
+    src: avatarImage,
     alt: 'Srustisri Panda Chibi Avatar',
     label: 'Srustisri @sru-codes 🎀',
     href: 'https://github.com/sru-codes',
@@ -38,7 +46,7 @@ const spiralItems: InfiniteSpiralItem[] = [
   },
   {
     id: 'mascot',
-    src: '/src/assets/images/cute_cyber_mascot_1790246079615.jpg',
+    src: mascotImage,
     alt: 'Autonomous AI Swarm Mascot',
     label: 'Agent Swarm Bot 🤖',
     href: 'https://github.com/sru-codes',
@@ -46,7 +54,7 @@ const spiralItems: InfiniteSpiralItem[] = [
   },
   {
     id: 'neural',
-    src: '/src/assets/images/neural_artwork_1790238748488.jpg',
+    src: neuralImage,
     alt: 'Neural Network & Machine Learning Models',
     label: 'ML Classifiers & NLP 🧠',
     href: 'https://github.com/sru-codes',
@@ -54,7 +62,7 @@ const spiralItems: InfiniteSpiralItem[] = [
   },
   {
     id: 'backdrop',
-    src: '/src/assets/images/story_backdrop_1790238763038.jpg',
+    src: backdropImage,
     alt: 'Storytelling Journey & Milestones',
     label: 'Story Journey 📜',
     href: 'https://github.com/sru-codes',
@@ -62,7 +70,7 @@ const spiralItems: InfiniteSpiralItem[] = [
   },
   {
     id: 'profile',
-    src: '/src/assets/images/sru_avatar_1790238734576.jpg',
+    src: profileImage,
     alt: 'GIET University B.Tech CSE',
     label: 'GIET Odisha 🎓',
     href: 'https://www.linkedin.com/in/srustisri-panda/',

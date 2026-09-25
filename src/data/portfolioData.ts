@@ -1,3 +1,7 @@
+import neuralArtwork from '../assets/images/neural_artwork_1790238748488.jpg';
+import storyBackdrop from '../assets/images/story_backdrop_1790238763038.jpg';
+import sruAvatar from '../assets/images/srustisri_chibi_avatar_1790242888033.jpg';
+
 export interface Project {
   id: string;
   title: string;
@@ -114,7 +118,7 @@ export const projects: Project[] = [
     ],
     githubUrl: 'https://github.com/sru-codes/ORCA-Marine-Intelligence',
     liveUrl: 'https://github.com/sru-codes/ORCA-Marine-Intelligence',
-    image: '/src/assets/images/neural_artwork_1790238748488.jpg',
+    image: neuralArtwork,
     highlightBadge: 'SIH 2026 Featured 🌊'
   },
   {
@@ -132,7 +136,7 @@ export const projects: Project[] = [
     ],
     githubUrl: 'https://github.com/sru-codes/sru-codes',
     liveUrl: 'https://github.com/sru-codes',
-    image: '/src/assets/images/story_backdrop_1790238763038.jpg',
+    image: storyBackdrop,
     highlightBadge: 'Celestial Magic 🌌'
   },
   {
@@ -150,7 +154,7 @@ export const projects: Project[] = [
     ],
     githubUrl: 'https://github.com/sru-codes/portfolio',
     liveUrl: 'https://github.com/sru-codes/portfolio',
-    image: '/src/assets/images/srustisri_chibi_avatar_1790242888033.jpg',
+    image: sruAvatar,
     highlightBadge: 'Creative Studio ✨'
   },
   {
@@ -168,7 +172,7 @@ export const projects: Project[] = [
     ],
     githubUrl: 'https://github.com/sru-codes/email-spam-classifier',
     liveUrl: 'https://github.com/sru-codes/email-spam-classifier',
-    image: '/src/assets/images/neural_artwork_1790238748488.jpg',
+    image: neuralArtwork,
     highlightBadge: 'Data Science 💌'
   },
   {
@@ -186,7 +190,7 @@ export const projects: Project[] = [
     ],
     githubUrl: 'https://github.com/sru-codes/laptop-price-predictor',
     liveUrl: 'https://github.com/sru-codes/laptop-price-predictor',
-    image: '/src/assets/images/story_backdrop_1790238763038.jpg',
+    image: storyBackdrop,
     highlightBadge: 'ML Regression 💻'
   }
 ];

@@ -47,6 +47,7 @@ import {
   Download
 } from 'lucide-react';
 import { sruProfile } from './data/portfolioData';
+import sruAvatar from './assets/images/srustisri_chibi_avatar_1790242888033.jpg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -333,7 +334,7 @@ export default function App() {
                 {/* Avatar Card */}
                 <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-[36px] overflow-hidden border-4 border-white shadow-2xl bg-[#FFE4E9]">
                   <img
-                    src="/src/assets/images/srustisri_chibi_avatar_1790242888033.jpg"
+                    src={sruAvatar}
                     alt="Srustisri Panda Chibi Avatar"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
